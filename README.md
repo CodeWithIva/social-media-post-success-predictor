@@ -43,7 +43,7 @@ You will need:
 ### 1. Clone the Repository
 
 ```bash
-git clone <[https://github.com/CodeWithIva/social-media-post-success-predictor]>
+git clone https://github.com/CodeWithIva/social-media-post-success-predictor
 
 cd social-media-post-success-predictor
 ```
