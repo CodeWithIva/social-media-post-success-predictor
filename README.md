@@ -21,25 +21,25 @@ Before running the model, you must have **Python 3.8+** and the dependencies lis
 
 ## Setup and Installation
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone [https://github.com/CodeWithIva/social-media-post-success-predictor]
 
 cd social-media-post-success-predictor
 
-### 2. Create and Activate Virtual Environment
+## 2. Create and Activate Virtual Environment
 
 It is highly recommended to use a virtual environment (venv).
 
-### 3. Install Dependencies
+## 3. Install Dependencies
 
 Install all required libraries, including Keras Tuner, using the provided file:
 
 ```bash
 pip install -r requirements.txt
 
-### 4. Running the Project
+## 4. Running the Project
 
 Run the main Python script from the root of your project directory:
 
@@ -52,10 +52,11 @@ Terminal Output: Prints the Hyperparameter Search process, the final training pr
 Artifacts: Creates a saved model file: best_social_media_model.h5.
 Graphs: Two windows will display: Training/Validation Curves and the Confusion Matrix.
 
-### 5. Key Model Architecture
+## 5. Key Model Architecture
 
 The model uses the Keras functional API to handle two distinct inputs:
 
 Text Path: Input Sequences → Embedding Layer → Flatten → Dense.
 Numerical Path: Scaled Features → Dense.
+
 Combination: Outputs are joined using the Concatenate layer before feeding into the classification layers (Dense → Dropout → Sigmoid Output).
